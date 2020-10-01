@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<MPD profiles="urn:mpeg:dash:profile:isoff-live:2011" type="dynamic" availabilityStartTime="2020-09-24T06:19:15Z" minimumUpdatePeriod="PT4.0S" minBufferTime="PT4.0S" publishTime="2020-10-01T08:57:11Z" timeShiftBufferDepth="PT60.0S" suggestedPresentationDelay="PT4.0S" xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:cenc="urn:mpeg:cenc:2013" xmlns:mspr="urn:microsoft:playready" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd">
+  <Period start="PT0S" id="1">
+    <AdaptationSet mimeType="video/mp4" startWithSAP="1" segmentAlignment="true">
+            <SegmentTemplate timescale="10000000" presentationTimeOffset="0" media="$RepresentationID$_Segment-$Time$.m4v" initialization="$RepresentationID$_init.m4i">
+        <SegmentTimeline>
+          <S t="6142294047734" d="40000000" r="14" />
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation width="320" height="180" frameRate="25" codecs="avc1.4d4020" scanType="progressive" id="1600928342972item-01item" bandwidth="200000" />
+      <Representation width="480" height="270" frameRate="25" codecs="avc1.4d4020" scanType="progressive" id="1600928342972item-02item" bandwidth="500000" />
+      <Representation width="640" height="360" frameRate="25" codecs="avc1.4d4020" scanType="progressive" id="1600928342972item-03item" bandwidth="800000" />
+      <Representation width="960" height="540" frameRate="25" codecs="avc1.4d4020" scanType="progressive" id="1600928342972item-04item" bandwidth="1200000" />
+      <Representation width="1280" height="720" frameRate="25" codecs="avc1.4d4020" scanType="progressive" id="1600928342972item-05item" bandwidth="1600000" />
+    </AdaptationSet>
+    <AdaptationSet mimeType="audio/mp4" startWithSAP="1" lang="eng" segmentAlignment="true">
+      <SegmentTemplate timescale="10000000" presentationTimeOffset="0" media="$RepresentationID$_Segment-$Time$.m4a" initialization="$RepresentationID$_init.m4i">
+        <SegmentTimeline>
+          <S t="6142294327317" d="40106667" />
+          <S t="6142334433984" d="39680000" />
+          <S t="6142374113984" d="40106667" />
+          <S t="6142414220651" d="40106666" />
+          <S t="6142454327317" d="40106667" />
+          <S t="6142494433984" d="39680000" />
+          <S t="6142534113984" d="40106667" />
+          <S t="6142574220651" d="40106666" />
+          <S t="6142614327317" d="40106667" />
+          <S t="6142654433984" d="39680000" />
+          <S t="6142694113984" d="40106667" />
+          <S t="6142734220651" d="40106666" />
+          <S t="6142774327317" d="40106667" />
+          <S t="6142814433984" d="39680000" />
+          <S t="6142854113984" d="40106667" />
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation audioSamplingRate="48000" codecs="mp4a.40.5" id="1600928342972item-06item" bandwidth="40000" />
+    </AdaptationSet>
+  </Period>
+</MPD>
